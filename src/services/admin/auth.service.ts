@@ -22,7 +22,7 @@ class AuthService{
             const encryptedPassword=await Auth.encryptPassword(data.password);
             isAdmin=await Admin.create({
                 email:data.email,
-                name:'Eric',
+                name:'mavarick',
                 password:encryptedPassword
             });
         }  

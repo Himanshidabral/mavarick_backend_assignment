@@ -54,7 +54,7 @@ class GlobalMiddleware{
         try{
             Jwt.verify(token, env().jwtSecret, (async (error: any, decode: any) => {
 
-                if (error) {
+                if (error) {    
                     if (error.message == "jwt expired") {
                         req.errorStatus = 401;
                         return _RS.unAuthenticated(res, "JWT_EXPIRED", "Admin Not Authorized", {})

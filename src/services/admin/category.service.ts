@@ -7,10 +7,6 @@ import Category from "../../models/category.model";
 
 class CategoryService {
 
-
-
-    
-
     /***********************************************************************
      * Get Category List
      * @param next NextFunction
